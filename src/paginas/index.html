@@ -14,27 +14,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-slate-100 flex flex-col min-h-screen overflow-y-scroll">
-
-  <header class="bg-slate-800 text-white shadow-md z-10 relative">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold tracking-tight">Portfólio | Gustavo S. do Prado</h1>
-      <nav>
-        <ul class="flex gap-6 text-sm">
-          <li><a href="index.html" class="font-semibold border-b-2 border-white pb-1 transition">Início</a></li>
-          <li><a href="sobre.html" class="hover:text-blue-400 transition">Sobre</a></li>
-          <li><a href="projetos.html" class="hover:text-blue-400 transition">Projetos</a></li>
-          <li><a href="contato.html" class="hover:text-blue-400 transition">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
+  <div id="injetar-cabecalho"></div>
   <main class="flex-grow relative z-10">
     <section class="max-w-3xl mx-auto px-6 py-12 bg-slate-800 mt-8 rounded-xl shadow-md transition text-center">
       
       <!-- Foto -->
       <div class="flex justify-center mb-6">
-        <img src="imagens/foto-gustavo.jpg" alt="Foto de Gustavo Simão do Prado"
+        <img src="../imagens/foto-gustavo.jpg" alt="Foto de Gustavo Simão do Prado"
              class="w-32 h-32 rounded-full border-4 border-blue-500 shadow-md object-cover" />
       </div>
 
@@ -57,9 +43,7 @@
       <p class="text-sm text-slate-400">Fique à vontade para explorar!</p>
     </section>
   </main>
-
-  <footer class="bg-slate-800 text-slate-400 text-center py-4 mt-6 text-sm z-10 relative">
-    <p>&copy; 2025 - Gustavo Simão do Prado</p>
-  </footer>
+  <div id="injetar-rodape"></div>
+  <script src="../scripts/carregar-componentes.js"></script>
 </body>
 </html>
