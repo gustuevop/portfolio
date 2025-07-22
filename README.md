@@ -21,7 +21,7 @@ src/
 │   ├── projetos.html        → Projetos realizados
 │   └── contato.html         → Informações de contato
 ├── scripts/
-│   ├── carregar-componentes.js  → Injeta cabeçalho e rodapé dinamicamente
+│   ├── carregarComponentes.js  → Injeta cabeçalho e rodapé dinamicamente
 │   └── fade.js                  → Controla animações de transição entre telas
 └── styles/
     └── fade.css                → Arquivo com animações e estilos customizados

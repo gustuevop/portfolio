@@ -17,55 +17,78 @@
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
       <!-- Projeto 1 -->
-      <div class="bg-slate-800 rounded-xl shadow-md p-6 hover:scale-[1.02] transition-transform fade-in delay-200">
-        <h3 class="text-xl font-semibold mb-2">Portfolio</h3>
-        <p class="text-slate-400 mb-4">Portfolio em formato de página web.</p>
-        <div class="flex flex-wrap gap-2 text-sm mb-4">
-          <span class="bg-green-700 text-white px-2 py-1 rounded">HTML</span>
-          <span class="bg-green-700 text-white px-2 py-1 rounded">TailwindCSS</span>
-          <span class="bg-green-700 text-white px-2 py-1 rounded">JavaScript</span>
+      <div class="bg-slate-800 rounded-xl shadow-md p-6 hover:scale-[1.02] transition-transform fade-in delay-200 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Portfolio</h3>
+          <p class="text-slate-400 mb-4">Portfolio em formato de página web.</p>
         </div>
-        <div class="flex gap-4 text-sm">
-          <a href="https://gustuevop.github.io/portfolio" target="_blank" class="text-blue-400 hover:underline">🌐 Ver online</a>
-          <a href="https://github.com/gustuevop/portfolio" target="_blank" class="text-blue-400 hover:underline">📁 GitHub</a>
+        <div class="mt-4">
+          <div class="flex flex-wrap gap-2 text-sm mb-4">
+            <span class="bg-green-700 text-white px-2 py-1 rounded">HTML</span>
+            <span class="bg-green-700 text-white px-2 py-1 rounded">TailwindCSS</span>
+            <span class="bg-green-700 text-white px-2 py-1 rounded">JavaScript</span>
+          </div>
+          <div id="botoes-projeto-1" class="flex justify-center"></div>
         </div>
       </div>
 
       <!-- Projeto 2 -->
-      <div class="bg-slate-800 rounded-xl shadow-md p-6 hover:scale-[1.02] transition-transform fade-in delay-300">
-        <h3 class="text-xl font-semibold mb-2">API em Java para ERP</h3>
-        <p class="text-slate-400 mb-4">Em construção...</p>
-        <div class="flex flex-wrap gap-2 text-sm mb-4">
-          <span class="bg-purple-700 text-white px-2 py-1 rounded">Java</span>
-          <span class="bg-purple-700 text-white px-2 py-1 rounded">PostgreSQL</span>
-          <span class="bg-purple-700 text-white px-2 py-1 rounded">Kafka</span>
+      <div class="bg-slate-800 rounded-xl shadow-md p-6 hover:scale-[1.02] transition-transform fade-in delay-300 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">API em Java para ERP</h3>
+          <p class="text-slate-400 mb-4">Em construção...</p>
         </div>
-        <div class="flex gap-4 text-sm">
-          <a href="#" class="text-blue-400 hover:underline">📁 GitHub (Em construção...)</a>
+        <div class="mt-4">
+          <div class="flex flex-wrap gap-2 text-sm mb-4">
+            <span class="bg-purple-700 text-white px-2 py-1 rounded">Java</span>
+            <span class="bg-purple-700 text-white px-2 py-1 rounded">PostgreSQL</span>
+            <span class="bg-purple-700 text-white px-2 py-1 rounded">Kafka</span>
+          </div>
+          <div id="botoes-projeto-2" class="flex justify-center"></div>
         </div>
       </div>
 
-            <!-- Projeto 3 -->
-            <div class="bg-slate-800 rounded-xl shadow-md p-6 hover:scale-[1.02] transition-transform fade-in delay-100">
-              <h3 class="text-xl font-semibold mb-2">Buscador de Endereços</h3>
-              <p class="text-slate-400 mb-4">Projeto escolar para consulta de endereços através do CEP, usando integração com a API pública ViaCEP.</p>
-              <div class="flex flex-wrap gap-2 text-sm mb-4">
-                <span class="bg-blue-700 text-white px-2 py-1 rounded">HTML</span>
-                <span class="bg-blue-700 text-white px-2 py-1 rounded">TailwindCSS</span>
-                <span class="bg-blue-700 text-white px-2 py-1 rounded">JavaScript</span>
-              </div>
-              <div class="flex gap-4 text-sm">
-                <a href="https://gustuevop.github.io/projeto-cep" target="_blank" class="text-blue-400 hover:underline">🌐 Ver online</a>
-                <a href="https://github.com/gustuevop/projeto-cep" target="_blank" class="text-blue-400 hover:underline">📁 GitHub</a>
-              </div>
-            </div>
+      <!-- Projeto 3 -->
+      <div class="bg-slate-800 rounded-xl shadow-md p-6 hover:scale-[1.02] transition-transform fade-in delay-100 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Buscador de Endereços</h3>
+          <p class="text-slate-400 mb-4">Consulta de endereços através do CEP usando a API pública ViaCEP.</p>
+        </div>
+        <div class="mt-4">
+          <div class="flex flex-wrap gap-2 text-sm mb-4">
+            <span class="bg-blue-700 text-white px-2 py-1 rounded">HTML</span>
+            <span class="bg-blue-700 text-white px-2 py-1 rounded">TailwindCSS</span>
+            <span class="bg-blue-700 text-white px-2 py-1 rounded">JavaScript</span>
+          </div>
+          <div id="botoes-projeto-3" class="flex justify-center"></div>
+        </div>
+      </div>
 
-      <!-- Adicione outros projetos com animações semelhantes -->
     </div>
   </main>
 
   <div id="injetar-rodape"></div>
-  <script src="../scripts/carregar-componentes.js"></script>
+  <script src="../scripts/carregarComponentes.js"></script>
   <script src="../scripts/fade.js"></script>
+  <script src="../scripts/carregarBotoesProjeto.js"></script>
+  <script>
+    carregarBotoesProjeto(
+      document.getElementById("botoes-projeto-1"),
+      "https://gustuevop.github.io/portfolio",
+      "https://github.com/gustuevop/portfolio"
+    );
+
+    carregarBotoesProjeto(
+      document.getElementById("botoes-projeto-2"),
+      "#",
+      "#"
+    );
+
+    carregarBotoesProjeto(
+      document.getElementById("botoes-projeto-3"),
+      "https://gustuevop.github.io/projeto-cep",
+      "https://github.com/gustuevop/projeto-cep"
+    );
+  </script>
 </body>
 </html>
