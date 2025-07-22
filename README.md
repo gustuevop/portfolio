@@ -1,61 +1,54 @@
-# Projeto Front-End | Busca de Endereço por CEP
+# Portfólio Profissional – Gustavo Simão do Prado
 
-Este projeto foi desenvolvido como parte da disciplina **Programação Front-End** do curso de **Engenharia de Software** na **UniCesumar**.
-
-A proposta é criar um site responsivo utilizando **HTML5**, **TailwindCSS** e **JavaScript**, com consumo de API pública para buscar endereços a partir de um CEP.
+Este é o meu portfólio pessoal, desenvolvido com HTML, TailwindCSS e JavaScript puro, com foco em desempenho, responsividade e clareza visual. Apresenta minha trajetória como desenvolvedor backend, experiências profissionais, projetos práticos e canais de contato.
 
 ---
 
 ## 🔗 Acesse o site
 
-🌐 [https://gustuevop.github.io/projeto-cep/](https://gustuevop.github.io/projeto-cep/)
+🌐 [https://gustuevop.github.io/portfolio](https://gustuevop.github.io/portfolio)
 
 ---
 
-## ✨ Funcionalidades
-
-- [Página inicial](https://gustuevop.github.io/projeto-cep/index.html) com explicação do projeto  
-- [Página sobre](https://gustuevop.github.io/projeto-cep/sobre.html) com informações do autor  
-- [Página de contato](https://gustuevop.github.io/projeto-cep/contato.html) com formas de contato direto (WhatsApp, LinkedIn, Instagram)  
-- [Página de busca de endereço](https://gustuevop.github.io/projeto-cep/busca.html) com:  
-  - Máscara de input no campo CEP  
-  - Integração com API ViaCEP  
-  - Exibição do resultado sem recarregar a página
-
----
-
-## 🛠️ Tecnologias utilizadas
-
-- HTML5  
-- Tailwind CSS (via CDN)  
-- JavaScript  
-- jQuery + jQuery Mask  
-- [ViaCEP API](https://viacep.com.br/)
-
----
-
-## 📁 Estrutura de arquivos
+## 📁 Estrutura do Projeto
 
 ```
-projeto-cep/
-├── index.html     - Página inicial
-├── sobre.html     - Sobre o autor
-├── contato.html   - Contato pessoal
-└── busca.html     - Busca de endereço por CEP
+src/
+├── imagens/                 → Fotos e ícones usados nas páginas
+├── paginas/                 → Páginas HTML principais
+│   ├── index.html           → Página inicial
+│   ├── sobre.html           → Currículo detalhado
+│   ├── projetos.html        → Projetos realizados
+│   └── contato.html         → Informações de contato
+├── scripts/
+│   ├── carregar-componentes.js  → Injeta cabeçalho e rodapé dinamicamente
+│   └── fade.js                  → Controla animações de transição entre telas
+└── styles/
+    └── fade.css                → Arquivo com animações e estilos customizados
 ```
 
 ---
 
-## 👨‍💻 Autor
+## 🚀 Tecnologias Utilizadas
 
-- **Gustavo Prado**
-- 📱 WhatsApp: [44991148553](https://wa.me/5544991148553)
-- ✉️ Email: [gustavo.spro@outlook.com](mailto:gustavo.spro@outlook.com)
-- 💼 [LinkedIn](https://www.linkedin.com/in/gustavo-spro/)
-- 📷 [Instagram](https://www.instagram.com/gustuevop/)
+- **HTML5** – Estrutura semântica
+- **TailwindCSS** – Estilização com utilitários
+- **JavaScript** – Scripts para animação e carregamento de componentes
+- **GitHub Pages** – Hospedagem gratuita do portfólio
 
 ---
 
-## 📝 Licença
+## 💡 Funcionalidades
 
-Projeto acadêmico de uso livre para fins educacionais.
+- Transições suaves entre páginas
+- Layout responsivo e adaptado para mobile
+- Estrutura modular com cabeçalho e rodapé reutilizáveis
+- Animações leves via CSS para entrada dos elementos
+
+---
+
+## ✍️ Autor
+- Gustavo Simão do Prado
+- Backend Developer
+
+- Sinta-se à vontade para sugerir melhorias ou adaptações!
