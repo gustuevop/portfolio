@@ -4,8 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sobre | Gustavo S. do Prado</title>
-  <meta name="description" content="Currículo completo de Gustavo Simão do Prado – Desenvolvedor Backend." />
+  <meta name="description" content="Apresentação profissional de Gustavo Simão do Prado – Desenvolvedor Backend." />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .float-circle {
+      float: left;
+      shape-outside: circle();
+      clip-path: circle();
+      width: 8rem;
+      height: 8rem;
+      margin-right: 1.5rem;
+      margin-bottom: 1rem;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #3b82f6; /* azul-500 */
+      box-sizing: border-box;
+    }
+  </style>
+  
 </head>
 <body class="bg-slate-900 text-slate-100 flex flex-col min-h-screen overflow-y-scroll">
 
@@ -14,61 +31,76 @@
   <main class="flex-grow max-w-4xl mx-auto px-6 py-12 space-y-10">
 
     <section class="relative">
-      <h2 class="text-3xl font-bold mb-1">Currículo completo</h2>
-      <p class="text-slate-400">Desenvolvedor Backend | Microserviços | APIs | NFSe | AWS</p>
+      <h2 class="text-3xl font-bold mb-1">Apresentação</h2>
+      <p class="text-slate-400 mb-4">APIs | Microsserviços | Componentes | AWS | Delphi | Java | C# | JavaScript | MongoDB | PostgreSQL</p>
+    
       <a
-        href="https://github.com/gustuevop/projeto-cep/blob/main/frontend-vite/curriculo-gustavo.pdf"
+        href="../curriculo-gustavo.pdf"
         target="_blank"
-        class="absolute top-0 right-0 text-sm text-blue-400 hover:text-blue-300 hover:underline transition"
+        download
+        class="absolute top-0 right-0 inline-flex items-center gap-2 bg-red-400/80 hover:bg-red-400 text-white text-xs font-medium px-3 py-1.5 rounded-md shadow-sm transition"
       >
-        📄 Ver PDF no GitHub
+        Baixar PDF
       </a>
+    
+      <div class="space-y-4 mt-6 text-justify leading-relaxed">
+        <img src="../imagens/foto-gustavo.jpg" alt="Foto de Gustavo Simão do Prado"
+             class="float-circle shadow-md" />
+    
+        <p>Olá, me chamo Gustavo! Sou desenvolvedor backend, atuando na TecnoSpeed em uma equipe especializada em NFSe — um dos documentos fiscais mais complexos do Brasil. Meu principal objetivo profissional é crescer de forma sólida e alcançar a liberdade financeira, com a intenção de retribuir ajudando pessoas em larga escala.</p>
+    
+        <p>Tenho perfil analítico e autodidata: gosto de entender os fundamentos por trás das tecnologias, ler documentações e estudar a fundo como os sistemas funcionam. Tenho afinidade com backend, APIs, automações e integrações entre sistemas, e me interesso por ambientes robustos e com desafios reais, como mensageria, filas, logs distribuídos e arquitetura em nuvem.</p>
+    
+        <p>No meu dia a dia, trabalho com múltiplos sistemas: desde APIs modernas em JavaScript/TypeScript com microserviços em EKS, até aplicações legadas em Delphi. Tenho familiaridade com ferramentas como GitLab, Jira, ArgoCD e Grafana, e costumo desenvolver soluções próprias para automatizar tarefas repetitivas e agilizar investigações.</p>
+    
+        <p>Além de programar, gosto de café, boxe, música, filosofia e gastronomia. Vejo a tecnologia como uma ferramenta concreta para melhorar nossa vida — e a de outras pessoas.</p>
+      </div>
     </section>
+    
 
     <section>
-      <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">💼 Objetivo profissional</h3>
-      <p>
-        Atualmente sou desenvolvedor backend, atuando com microserviços, APIs, componentes fiscais (NFSe), mensageria com SQS, e infraestrutura moderna com EKS, ArgoCD, CloudWatch, S3 e Grafana. Trabalho com JavaScript (Node.js), Delphi (XE3), bancos MongoDB, PostgreSQL e Redis.
-      </p>
-    </section>
-
-    <section>
-      <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">🧠 Habilidades técnicas</h3>
+      <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">Habilidades técnicas</h3>
       <ul class="list-disc pl-5 space-y-1">
-        <li>Node.js para backend (JavaScript)</li>
-        <li>Arquitetura de microserviços, mensageria com AWS SQS</li>
-        <li>EKS, ArgoCD, CloudWatch, S3, Grafana</li>
-        <li>Bancos: MongoDB, PostgreSQL, Redis</li>
-        <li>Delphi para manutenção de componentes fiscais (NFSe)</li>
-        <li>WSL, Jira no uso cotidiano</li>
-        <li>Participação em projeto de migração de versão do MongoDB com testes em staging</li>
+        <li><strong>Linguagens:</strong> JavaScript, Delphi (XE3/XE6), Java, C#, SQL</li>
+        <li><strong>Frameworks e plataformas:</strong> Node.js, ArgoCD, AWS (EKS, ECS, S3, SQS, CloudWatch), RabbitMQ</li>
+        <li><strong>Bancos de dados:</strong> MongoDB, PostgreSQL, Redis</li>
+        <li><strong>Monitoramento e logs:</strong> Grafana, CloudWatch</li>
+        <li><strong>Ferramentas de trabalho:</strong> GitLab CI/CD, Jira, Visual Studio, VSCode</li>
+        <li><strong>Estudo contínuo:</strong> Atualmente estudando Java com foco em sistemas robustos, como sistemas bancários</li>
       </ul>
     </section>
 
     <section>
-      <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">👨‍💻 Experiência profissional</h3>
+      <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">Experiência profissional</h3>
       <div class="space-y-6">
 
         <div>
           <h4 class="font-bold">TecnoSpeed TI</h4>
-          <p class="text-sm text-slate-400">nov 2024 – atual (Desenvolvedor de Software)</p>
+          <p class="text-sm text-slate-400">11/2024 – atual (Desenvolvedor de Software)</p>
           <ul class="list-disc pl-5 mt-2 space-y-1">
-            <li>Desenvolvimento de sistemas NFSe com foco em performance e confiabilidade.</li>
-            <li>Trabalho com SQS, Redis, MongoDB e múltiplos workers em ambiente escalável (EKS).</li>
+            <li>Atuação com sistemas desktop legados e soluções modernas em arquitetura de microserviços.</li>
+            <li>Foco em performance, confiabilidade e escalabilidade de sistemas.</li>
             <li>Criação de testes automatizados (Jest).</li>
-            <li>Suporte técnico em decisões de arquitetura e migrações críticas.</li>
-          </ul>
+            <li>Análise técnica de migração de versão de banco de dados não relacional.</li>
+            <li>Análise de código para identificar gargalos no fluxo de emissão de NFSe.</li>
+          </ul>          
         </div>
 
         <div>
           <h4 class="font-bold">TecnoSpeed TI</h4>
-          <p class="text-sm text-slate-400">out 2022 – nov 2024 (Consultor técnico)</p>
-          <p class="mt-1">Atuação com consultoria técnica para clientes B2B, apoiando o uso das APIs e DLLs da empresa.</p>
+          <p class="text-sm text-slate-400">09/2022 – 11/2024 (Consultor técnico)</p>
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li>Consultoria técnica B2B, auxiliando os clientes no uso das APIs e DLLs da empresa.</li>
+            <li>Gravação de conteúdo de capacitação para novos colaboradores.</li>
+            <li>Geregenciamento de chamados abertos.</li>
+            <li>Manutenção em scripts Object Pascal e relatórios .rtm.</li>
+            <li>Investigação de problemas em infraestrutura cloud</li>
+          </ul>
         </div>
 
         <div>
           <h4 class="font-bold">Holdprint Sistemas</h4>
-          <p class="text-sm text-slate-400">out 2021 – ago 2022 (Assistente de implantação)</p>
+          <p class="text-sm text-slate-400">09/2021 – 08/2022 (Assistente de implantação)</p>
           <ul class="list-disc pl-5 mt-2 space-y-1">
             <li>Implantação de novos clientes e homologação de NFSe, boletos e SPED Fiscal.</li>
             <li>Treinamento de usuários, suporte técnico e organização via CRM/Zendesk.</li>
@@ -77,15 +109,17 @@
 
         <div>
           <h4 class="font-bold">Holdprint Sistemas</h4>
-          <p class="text-sm text-slate-400">abr 2021 – out 2021 (Estagiário de CS)</p>
-          <p class="mt-1">Apoio em rotinas da equipe de CS, contato com clientes e comunicação por e-mail.</p>
+          <p class="text-sm text-slate-400">04/2021 – 09/2021 (Estagiário de CS)</p>
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li>Apoio em rotinas da equipe de CS, contato com clientes e comunicação por e-mail.</li>
+          </ul>
         </div>
 
       </div>
     </section>
 
     <section>
-      <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">🎓 Formação</h3>
+      <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">Formação</h3>
       <ul class="list-disc pl-5 space-y-2">
         <li><strong>Engenharia de Software</strong> – Cesumar (2024 - 2029)</li>
         <li><strong>Técnico em Contabilidade</strong> – Senac (10/2024 - 10/2025)</li>
@@ -96,12 +130,12 @@
     <section>
       <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">Idiomas</h3>
       <ul class="list-disc pl-5 space-y-1">
-        <li>Inglês comunicativo (leitura técnica e conversação básica)</li>
+        <li>Inglês C1</li>
       </ul>
     </section>
 
     <section>
-      <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">🔗 Links profissionais</h3>
+      <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">Links profissionais</h3>
       <ul class="space-y-2 text-blue-400">
         <li><a href="https://www.linkedin.com/in/gustavo-spro/" target="_blank" class="hover:underline">LinkedIn</a></li>
         <li><a href="https://github.com/gustuevop/" target="_blank" class="hover:underline">GitHub</a></li>
@@ -112,9 +146,6 @@
 
   </main>
 
-  <footer class="bg-slate-800 text-slate-400 text-center py-4 mt-6 text-sm">
-    <p>&copy; 2025 - Gustavo Simão do Prado</p>
-  </footer>
   <div id="injetar-rodape"></div>
   <script src="../scripts/carregar-componentes.js"></script>
 </body>
