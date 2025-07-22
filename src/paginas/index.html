@@ -12,19 +12,21 @@
   <meta property="og:url" content="https://gustuevop.github.io/projeto-cep/frontend-viacep/index.html" />
   <title>Início | Portfólio Gustavo S. do Prado</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../styles/fade.css" />
 </head>
 <body class="bg-slate-900 text-slate-100 flex flex-col min-h-screen overflow-y-scroll">
   <div id="injetar-cabecalho"></div>
 
   <main class="flex-grow relative z-10">
-    <section class="max-w-3xl mx-auto px-6 py-12 bg-slate-800 mt-8 rounded-xl shadow-md transition text-center">
+    <section class="max-w-3xl mx-auto px-6 py-12 bg-slate-800 mt-8 rounded-xl shadow-md transition text-center fade-in">
 
-      <h2 class="text-3xl font-extrabold mb-4">Seja bem-vindo ao meu portfólio</h2>
-      <p class="text-base leading-relaxed text-slate-300 mb-6">
+      <h2 class="text-3xl font-extrabold mb-4 slide-in-left delay-100">Seja bem-vindo ao meu portfólio</h2>
+
+      <p class="text-base leading-relaxed text-slate-300 mb-6 slide-in-left delay-200">
         Aqui você encontrará uma visão completa do meu perfil profissional como desenvolvedor backend, minhas experiências, projetos práticos e formas de contato. Sinta-se à vontade para explorar cada seção!
       </p>
 
-      <div class="text-left max-w-md mx-auto text-slate-300 space-y-4">
+      <div class="text-left max-w-md mx-auto text-slate-300 space-y-4 zoom-in delay-300">
         <div>
           <p class="text-sm uppercase text-slate-400 font-semibold mb-1">📘 Conteúdo</p>
           <ul class="list-disc pl-5 space-y-2">
@@ -35,11 +37,12 @@
         </div>
       </div>
 
-      <p class="text-sm text-slate-500 mt-6">Obrigado pela visita! 🚀</p>
+      <p class="text-sm text-slate-500 mt-6 fade-in delay-400">Obrigado pela visita! 🚀</p>
     </section>
   </main>
 
   <div id="injetar-rodape"></div>
   <script src="../scripts/carregar-componentes.js"></script>
+  <script src="../scripts/fade.js"></script>
 </body>
 </html>

@@ -6,34 +6,17 @@
   <title>Sobre | Gustavo S. do Prado</title>
   <meta name="description" content="Apresentação profissional de Gustavo Simão do Prado – Desenvolvedor Backend." />
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    .float-circle {
-      float: left;
-      shape-outside: circle();
-      clip-path: circle();
-      width: 8rem;
-      height: 8rem;
-      margin-right: 1.5rem;
-      margin-bottom: 1rem;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #3b82f6; /* azul-500 */
-      box-sizing: border-box;
-    }
-  </style>
-  
+  <link rel="stylesheet" href="../styles/fade.css" />
 </head>
 <body class="bg-slate-900 text-slate-100 flex flex-col min-h-screen overflow-y-scroll">
-
   <div id="injetar-cabecalho"></div>
 
-  <main class="flex-grow max-w-4xl mx-auto px-6 py-12 space-y-10">
+  <main class="flex-grow max-w-4xl mx-auto px-6 py-12 space-y-10 fade-in">
 
-    <section class="relative">
+    <section class="relative slide-in-left delay-100">
       <h2 class="text-3xl font-bold mb-1">Apresentação</h2>
       <p class="text-slate-400 mb-4">APIs | Microsserviços | Componentes | AWS | Delphi | Java | C# | JavaScript | MongoDB | PostgreSQL</p>
-    
+
       <a
         href="../curriculo-gustavo.pdf"
         target="_blank"
@@ -42,23 +25,21 @@
       >
         Baixar PDF
       </a>
-    
+
       <div class="space-y-4 mt-6 text-justify leading-relaxed">
-        <img src="../imagens/foto-gustavo.jpg" alt="Foto de Gustavo Simão do Prado"
-             class="float-circle shadow-md" />
-    
+        <img src="../imagens/foto-gustavo.jpg" alt="Foto de Gustavo Simão do Prado" class="float-circle shadow-md" />
+
         <p>Olá, me chamo Gustavo! Sou desenvolvedor backend, atuando na TecnoSpeed em uma equipe especializada em NFSe — um dos documentos fiscais mais complexos do Brasil. Meu principal objetivo profissional é crescer de forma sólida e alcançar a liberdade financeira, com a intenção de retribuir ajudando pessoas em larga escala.</p>
-    
+
         <p>Tenho perfil analítico e autodidata: gosto de entender os fundamentos por trás das tecnologias, ler documentações e estudar a fundo como os sistemas funcionam. Tenho afinidade com backend, APIs, automações e integrações entre sistemas, e me interesso por ambientes robustos e com desafios reais, como mensageria, filas, logs distribuídos e arquitetura em nuvem.</p>
-    
+
         <p>No meu dia a dia, trabalho com múltiplos sistemas: desde APIs modernas em JavaScript/TypeScript com microserviços em EKS, até aplicações legadas em Delphi. Tenho familiaridade com ferramentas como GitLab, Jira, ArgoCD e Grafana, e costumo desenvolver soluções próprias para automatizar tarefas repetitivas e agilizar investigações.</p>
-    
+
         <p>Além de programar, gosto de café, boxe, música, filosofia e gastronomia. Vejo a tecnologia como uma ferramenta concreta para melhorar nossa vida — e a de outras pessoas.</p>
       </div>
     </section>
-    
 
-    <section>
+    <section class="fade-in delay-200">
       <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">Habilidades técnicas</h3>
       <ul class="list-disc pl-5 space-y-1">
         <li><strong>Linguagens:</strong> JavaScript, Delphi (XE3/XE6), Java, C#, SQL</li>
@@ -70,7 +51,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="fade-in delay-300">
       <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">Experiência profissional</h3>
       <div class="space-y-6">
 
@@ -118,7 +99,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="fade-in delay-400">
       <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">Formação</h3>
       <ul class="list-disc pl-5 space-y-2">
         <li><strong>Engenharia de Software</strong> – Cesumar (2024 - 2029)</li>
@@ -127,14 +108,14 @@
       </ul>
     </section>
 
-    <section>
+    <section class="fade-in delay-500">
       <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">Idiomas</h3>
       <ul class="list-disc pl-5 space-y-1">
         <li>Inglês C1</li>
       </ul>
     </section>
 
-    <section>
+    <section class="fade-in delay-600">
       <h3 class="text-xl font-semibold mb-2 border-b border-slate-700 pb-1">Links profissionais</h3>
       <ul class="space-y-2 text-blue-400">
         <li><a href="https://www.linkedin.com/in/gustavo-spro/" target="_blank" class="hover:underline">LinkedIn</a></li>
@@ -148,5 +129,6 @@
 
   <div id="injetar-rodape"></div>
   <script src="../scripts/carregar-componentes.js"></script>
+  <script src="../scripts/fade.js"></script>
 </body>
 </html>

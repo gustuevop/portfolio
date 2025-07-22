@@ -6,12 +6,15 @@
   <title>Contato | Gustavo S. do Prado</title>
   <meta name="description" content="Página de contato de Gustavo Simão do Prado – Desenvolvedor Backend." />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../styles/fade.css" />
 </head>
 <body class="bg-slate-900 text-slate-100 flex flex-col min-h-screen overflow-y-scroll">
+
   <div id="injetar-cabecalho"></div>
-  <main class="flex-grow max-w-3xl mx-auto px-6 py-12">
-    <section class="bg-slate-800 p-8 rounded-xl shadow-md">
-      <h2 class="text-3xl font-bold mb-6 text-center">Entre em contato</h2>
+
+  <main class="flex-grow max-w-3xl mx-auto px-6 py-12 fade-in">
+    <section class="bg-slate-800 p-8 rounded-xl shadow-md slide-in-up">
+      <h2 class="text-3xl font-bold mb-6 text-center slide-in-down">Entre em contato</h2>
       <p class="text-center text-slate-300 mb-8">Se quiser conversar sobre projetos, colaborações ou dúvidas, meus canais estão abertos:</p>
       
       <ul class="space-y-4 text-lg">
@@ -32,10 +35,14 @@
           <a href="https://www.instagram.com/gustuevop/" target="_blank" class="text-blue-400 hover:underline ml-2">@gustuevop</a>
         </li>
       </ul>
+
       <p class="text-sm text-slate-400 mt-8 text-center">Estou disponível para oportunidades, parcerias e bate-papos técnicos. 🚀</p>
     </section>
   </main>
+
   <div id="injetar-rodape"></div>
+
   <script src="../scripts/carregar-componentes.js"></script>
+  <script src="../scripts/fade.js"></script>
 </body>
 </html>

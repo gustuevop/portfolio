@@ -6,14 +6,18 @@
   <title>Projetos | Gustavo S. do Prado</title>
   <meta name="description" content="Portfólio de projetos pessoais de Gustavo Simão do Prado – Desenvolvedor Backend." />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../styles/fade.css" />
 </head>
 <body class="bg-slate-900 text-slate-100 flex flex-col min-h-screen overflow-y-scroll">
   <div id="injetar-cabecalho"></div>
-  <main class="flex-grow max-w-6xl mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold mb-10 text-center">Meus Projetos</h2>
+
+  <main class="flex-grow max-w-6xl mx-auto px-6 py-12 fade-in">
+    <h2 class="text-3xl font-bold mb-10 text-center slide-in-down">Meus Projetos</h2>
+
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
       <!-- Projeto 1 -->
-      <div class="bg-slate-800 rounded-xl shadow-md p-6 hover:scale-[1.02] transition-transform">
+      <div class="bg-slate-800 rounded-xl shadow-md p-6 hover:scale-[1.02] transition-transform fade-in delay-100">
         <h3 class="text-xl font-semibold mb-2">Buscador de Endereços (ViaCEP)</h3>
         <p class="text-slate-400 mb-4">Ferramenta para consulta de endereços via CEP usando integração com a API pública ViaCEP.</p>
         <div class="flex flex-wrap gap-2 text-sm mb-4">
@@ -28,7 +32,7 @@
       </div>
 
       <!-- Projeto 2 -->
-      <div class="bg-slate-800 rounded-xl shadow-md p-6 hover:scale-[1.02] transition-transform">
+      <div class="bg-slate-800 rounded-xl shadow-md p-6 hover:scale-[1.02] transition-transform fade-in delay-200">
         <h3 class="text-xl font-semibold mb-2">Em construção...</h3>
         <p class="text-slate-400 mb-4">Em construção...</p>
         <div class="flex flex-wrap gap-2 text-sm mb-4">
@@ -42,7 +46,7 @@
       </div>
 
       <!-- Projeto 3 -->
-      <div class="bg-slate-800 rounded-xl shadow-md p-6 hover:scale-[1.02] transition-transform">
+      <div class="bg-slate-800 rounded-xl shadow-md p-6 hover:scale-[1.02] transition-transform fade-in delay-300">
         <h3 class="text-xl font-semibold mb-2">Em construção...</h3>
         <p class="text-slate-400 mb-4">Em construção...</p>
         <div class="flex flex-wrap gap-2 text-sm mb-4">
@@ -55,11 +59,12 @@
         </div>
       </div>
 
-      <!-- Adicione outros projetos aqui -->
-
+      <!-- Adicione outros projetos com animações semelhantes -->
     </div>
   </main>
+
   <div id="injetar-rodape"></div>
   <script src="../scripts/carregar-componentes.js"></script>
+  <script src="../scripts/fade.js"></script>
 </body>
 </html>
