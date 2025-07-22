@@ -6,7 +6,7 @@ Este é o meu portfólio pessoal, desenvolvido com HTML, TailwindCSS e JavaScrip
 
 ## 🔗 Acesse o site
 
-🌐 [https://gustuevop.github.io/portfolio](https://gustuevop.github.io/portfolio)
+🌐 [https://gustuevop.github.io/portfolio/src/paginas/index.html](https://gustuevop.github.io/portfolio/src/paginas/index.html)
 
 ---
 
