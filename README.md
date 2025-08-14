@@ -13,10 +13,10 @@ Este é o meu portfólio pessoal, desenvolvido com HTML, TailwindCSS e JavaScrip
 ## 📁 Estrutura do Projeto
 
 ```
+index.html → Página inicial
 src/
 ├── imagens/                 → Fotos e ícones usados nas páginas
 ├── paginas/                 → Páginas HTML principais
-│   ├── index.html           → Página inicial
 │   ├── sobre.html           → Currículo detalhado
 │   ├── projetos.html        → Projetos realizados
 │   └── contato.html         → Informações de contato
