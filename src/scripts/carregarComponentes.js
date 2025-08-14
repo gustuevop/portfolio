@@ -29,6 +29,10 @@ function destacarMenuAtivo() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  carregarComponente("injetar-cabecalho", "../componentes/cabecalho.html");
-  carregarComponente("injetar-rodape", "../componentes/rodape.html");
+  const basePath = window.location.pathname.includes("/src/paginas/")
+    ? "../componentes/"
+    : "src/componentes/";
+
+  carregarComponente("injetar-cabecalho", `${basePath}cabecalho.html`);
+  carregarComponente("injetar-rodape", `${basePath}rodape.html`);
 });
