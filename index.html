@@ -1,48 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio profissional de Gustavo Simão do Prado – Desenvolvedor Backend com foco em microserviços, APIs e infraestrutura moderna." />
-  <meta name="author" content="Gustavo Simão do Prado" />
-  <meta name="keywords" content="Desenvolvedor Backend, Portfólio, Gustavo Prado, Node.js, MongoDB, PostgreSQL, SQS, AWS, TailwindCSS, JavaScript" />
-  <meta property="og:title" content="Portfólio | Gustavo Simão do Prado" />
-  <meta property="og:description" content="Apresentação profissional e projetos de Gustavo S. do Prado, dev backend." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://gustuevop.github.io/projeto-cep/frontend-viacep/index.html" />
-  <title>Início | Portfólio Gustavo S. do Prado</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./src/styles/fade.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/styles.css">
+  <link rel="stylesheet" href="./style/navigation.css">
+  <link rel="stylesheet" href="./style/home.css">
+  <title>Document</title>
 </head>
-<body class="bg-slate-900 text-slate-100 flex flex-col min-h-screen overflow-y-scroll">
-  <div id="injetar-cabecalho"></div>
 
-  <main class="flex-grow relative z-10">
-    <section class="max-w-3xl mx-auto px-6 py-12 bg-slate-800 mt-8 rounded-xl shadow-md transition text-center fade-in">
+<body>
+  <nav class="navigation">
+    <ul class="menu">
+      <li>
+        <a href="#home" class="menu-link">Home</a>
+      </li>
+      <li>
+        <a href="#projects" class="menu-link">Projects</a>
+      </li>
+      <li>
+        <a href="#contact" class="menu-link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <main id="home" class="profile-box">
 
-      <h2 class="text-3xl font-extrabold mb-4 slide-in-left delay-100">Seja bem-vindo ao meu portfólio</h2>
+    <div class="home">
+      
+      <div class="photo">
+        <img src="img/profile2.jpg" alt="Picture of Gustavo Prado" class="profile-photo">
+        <h1 class="title">Gustavo Prado</h1>
+        <p class="profile-title">Software Developer</p>
+      </div>
 
-      <p class="text-base leading-relaxed text-slate-300 mb-6 slide-in-left delay-200">
-        Aqui você encontrará uma visão completa do meu perfil profissional como desenvolvedor backend, minhas experiências, projetos práticos e formas de contato. Sinta-se à vontade para explorar cada seção!
-      </p>
+      <div id="about" class="about">
+        <h2 class="title">About me</h2>
 
-      <div class="text-left max-w-md mx-auto text-slate-300 space-y-4 zoom-in delay-300">
-        <div>
-          <p class="text-sm uppercase text-slate-400 font-semibold mb-1">📘 Conteúdo</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li><strong class="text-slate-100">Sobre</strong> – currículo completo, trajetória, habilidades e formação</li>
-            <li><strong class="text-slate-100">Projetos</strong> – soluções reais e repositórios com código disponível</li>
-            <li><strong class="text-slate-100">Contato</strong> – canais diretos para falar comigo</li>
-          </ul>
+        <div class="about-box">
+          <p class="about-paragraph">
+            Hello, there! I love technology and helping people, so the path I chose to combine these two passions was becoming a software developer.
+          </p>
+
+          <br>
+
+          <p class="about-paragraph">
+            <a href="#contact">Contact</a> me if you're intersted in hiring me, hearing more about my dreams and goals or maybe both😊.
+          </p>
+
         </div>
       </div>
 
-      <p class="text-sm text-slate-500 mt-6 fade-in delay-400">Obrigado pela visita! 🚀</p>
-    </section>
+    </div>
+
   </main>
 
-  <div id="injetar-rodape"></div>
-  <script src="./src/scripts/carregarComponentes.js"></script>
-  <script src="./src/scripts/fade.js"></script>
+
+
+    <section id="projects" class="projects">
+      <h2 class="projects-title">Projects</h2>
+      <div class="projects-box">
+
+        <div class="project-card">
+          <img src="./img/itau-backend-challenge.png" alt="Project 1" class="project-img">
+          <h3 class="project-title">Itaú Bank Back-end Challenge</h3>
+          <p class="project-paragraph">The main task is to develop a API without any DB connections. The API will receive monetary transaction JSON and deliver analytic data.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="./img/itau-backend-challenge.png" alt="Project 1" class="project-img">
+          <h3 class="project-title">Itaú Bank Back-end Challenge</h3>
+          <p class="project-paragraph">The main task is to develop a API without any DB connections. The API will receive monetary transaction JSON and deliver analytic data.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="./img/itau-backend-challenge.png" alt="Project 1" class="project-img">
+          <h3 class="project-title">Itaú Bank Back-end Challenge</h3>
+          <p class="project-paragraph">The main task is to develop a API without any DB connections. The API will receive monetary transaction JSON and deliver analytic data.</p>
+        </div>
+
+      </div>
+    </section>
+    <script src="./scripts/navigation.js"></script>
 </body>
 </html>
