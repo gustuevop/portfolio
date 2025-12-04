@@ -6,12 +6,19 @@
 }
 
 .home {
-    display: flex;
-    gap: 12rem;                
-    align-items: center;       
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(20px, 5vw, 60px);
+    
     max-width: 1200px;
-    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+
+    justify-content: center;
+    align-items: start;
 }
+
+
 
 .photo {
     text-align: center;
@@ -53,13 +60,14 @@
 /*To be responsive*/
 @media (max-width: 900px) {
     .home {
-        flex-direction: column-reverse;
+        grid-template-columns: 1fr; /* apenas 1 coluna no mobile */
         text-align: center;
         gap: 4rem;
     }
 
     .about {
         max-width: 90%;
+        margin: 0 auto;
     }
 
     .profile-photo {
