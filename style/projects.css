@@ -19,8 +19,9 @@
     font-weight: bold;
 }
 
-
 .project-card {
+    position: relative;
+    padding-bottom: 40px; 
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     backdrop-filter: blur(5px);
@@ -34,7 +35,6 @@
     box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
     transform: translateY(-10px) scale(1.04);
 }
-
 
 .project-img {
     height: 200px;
@@ -53,5 +53,44 @@
 .project-paragraph {
     color: var(--light);
     line-height: 1.25rem;
-    padding: 0.5rem;
+    padding: 0.8rem;
+}
+
+.github-button {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;  
+    padding: 6px 12px;
+
+    background: rgb(29, 33, 37);
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 10;
+}
+
+.github-button:hover {
+    background: #444c56;
+    transform: translateY(-2px);
+}
+
+.github-button:focus {
+    outline: 2px solid #58a6ff;
+    outline-offset: 3px;
+}
+
+.github-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    filter: invert(1); /* makes icon white if it's black */
 }
