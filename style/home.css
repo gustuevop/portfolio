@@ -34,7 +34,7 @@
 
 .title {
     font-size: 3.5rem;
-    color:rgb(35, 40, 150);
+    color: var(--light);
     font-weight: bold;
     margin: 10px;
     text-align: center;
@@ -60,7 +60,7 @@
 /*To be responsive*/
 @media (max-width: 900px) {
     .home {
-        grid-template-columns: 1fr; /* apenas 1 coluna no mobile */
+        grid-template-columns: 1fr;
         text-align: center;
         gap: 4rem;
     }

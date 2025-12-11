@@ -15,7 +15,7 @@
     text-align: center;
     font-size: 3.5rem;
     margin-bottom: 50px;
-    color:rgb(35, 40, 150);
+    color: var(--light);
     font-weight: bold;
 }
 
