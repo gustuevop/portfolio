@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  
 
   <div class="particles"></div>
 
@@ -32,7 +33,6 @@
   
   <main id="home" class="profile-box">
     <div class="home">
-      
       <div class="photo">
         <img src="img/profile2.jpg" alt="Picture of Gustavo Prado" class="profile-photo">
         <h1 class="title">Gustavo Prado</h1>
@@ -46,8 +46,6 @@
           <p class="about-paragraph">
             Hello there! I love technology and helping people, so the path I chose to combine these two passions was becoming a software developer.
           </p>
-
-          <br>
 
           <p class="about-paragraph">
             <a href="#contact">Contact</a> me if you're interested in hiring me, hearing more about my dreams and goals or maybe both 😊.
@@ -114,32 +112,66 @@
       </div>
     </section>
 
-    <section id="contact" class="contacts">
-      <h2 class="contacts-title">Contact me</h2>
-      
-      <form class="contact-form" id="contact-form">
-        
-        <div class="form-group">
-          <input
-            id="input-name"
-            required
-            placeholder="Type your name"
-            class="form-field"
-          />
-        </div>
+<section id="contact" class="contacts">
+  <h2 class="contacts-title">Contact me</h2>
 
-        <div class="form-group">
-          <textarea 
-            id="input-message"
-            required
-            placeholder="Type message" 
-            class="form-field" 
-            rows="6"></textarea>
-        </div>
+  <div class="contacts-container">
+    
+    <form class="contact-form" id="contact-form">
+      <div class="form-group">
+        <input
+          id="input-name"
+          required
+          placeholder="Type your name"
+          class="form-field"
+        />
+      </div>
 
-        <button type="submit" class="form-btn">Submit</button>
-      </form>
-    </section>
+      <div class="form-group">
+        <textarea
+          id="input-message"
+          required
+          placeholder="Type message"
+          class="form-field"
+          rows="6"></textarea>
+      </div>
+
+      <button type="submit" class="form-btn">Submit</button>
+    </form>
+
+    <!-- CONTACT CARD -->
+    <div class="contact-card">
+      <h3 class="contact-card-title">Let’s connect</h3>
+
+      <ul class="contact-list">
+        <li>
+          <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank">
+            LinkedIn
+          </a>
+        </li>
+
+        <li>
+          <a href="https://wa.me/YOUR_NUMBER" target="_blank">
+            WhatsApp
+          </a>
+        </li>
+
+        <li>
+          <a href="mailto:youremail@gmail.com">
+            Email
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/gustuevop" target="_blank">
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
 
     <script src="./scripts/main.js"></script>
 </body>

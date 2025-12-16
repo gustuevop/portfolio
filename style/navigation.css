@@ -1,11 +1,18 @@
 .navigation {
     position: fixed;
     top: 0;
-    background-color: var(--translucent);
     width: 100%;
     z-index: 100;
-    padding: 1.5rem;
+
+    padding: 1.25rem;
+
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid var(--glass-border);
 }
+
 
 .menu {
     display: flex;
@@ -14,26 +21,49 @@
     gap: 3rem;
 }
 
-.menu-link:hover::before {
-    width: 100%;
-}
 
 .menu-link {
     text-decoration: none;
     color: var(--light);
     font-weight: 500;
+    font-size: 1rem;
+
     position: relative;
-    padding-top: 0.5rem;
-    padding-bottom: 0.25rem;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
 }
 
 .menu-link::before {
     content: '';
-    height: 2px;
-    width: 0%;
     position: absolute;
     left: 0;
-    bottom: 0;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
-    transition: width 0.5s ease;
+    bottom: -4px;
+
+    width: 0%;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        var(--accent),
+        rgba(99,102,241,0.4)
+    );
+
+    border-radius: 999px;
+    transition: width 0.35s ease;
+}
+
+.menu-link:hover::before {
+    width: 100%;
+}
+
+.menu-link:hover {
+    color: var(--accent);
+}
+
+.menu-link.active {
+    color: var(--accent);
+}
+
+.menu-link.active::before {
+    width: 100%;
 }
