@@ -1,0 +1,3 @@
+const CONFIG = {
+    PHONE_NUMBER: "55991148553"
+};
