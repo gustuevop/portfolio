@@ -34,20 +34,6 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    background: linear-gradient(90deg, var(--primary), var(--secundary));
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
     transition: width 0.5s ease;
-}
-
-.construction-warning {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    position: absolute;
-    left: 2rem;
-}
-
-.warning-icon {
-    width: 25px;
-    height: 25px;
-    object-fit: contain;
 }

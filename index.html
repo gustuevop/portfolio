@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./style/home.css">
   <link rel="stylesheet" href="./style/projects.css">
   <link rel="stylesheet" href="./style/contacts.css">
-  <title>Document</title>
+  <title>Gustavo Prado | Software Developer</title>
 </head>
 
 <body>
@@ -18,12 +18,6 @@
 
   <nav class="navigation">
     <ul class="menu">
-      
-      <p class="construction-warning">
-        <img src="./img/red-dot.gif" alt="Warning" class="warning-icon">
-        Under construction
-      </p>
-
       <li>
         <a href="#home" class="menu-link">Home</a>
       </li>
@@ -126,11 +120,22 @@
       <form class="contact-form" id="contact-form">
         
         <div class="form-group">
-          <input placeholder="Type your name" class="form-field" id="input-name">
+          <input
+            id="input-name"
+            required
+            placeholder="Type your name"
+            class="form-field"
+          />
         </div>
 
         <div class="form-group">
-          <textarea placeholder="Type message" class="form-field" rows="6" id="input-message"></textarea>
+          <textarea 
+            id="input-message"
+            required
+            placeholder="Type message" 
+            class="form-field" 
+            rows="6">
+          </textarea>
         </div>
 
         <button type="submit" class="form-btn">Submit</button>
